@@ -358,6 +358,7 @@ export class DemoDataProvider implements DataProvider {
   }
 
   // --- Brand Profiles ---
+  // ---
   async getActiveBrandProfile(tenantId: string): Promise<BrandProfile | null> {
     return this.brandProfiles.find(bp => bp.tenantId === tenantId && bp.status === 'active') || null;
   }
